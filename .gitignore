@@ -1,0 +1,161 @@
+# =========================================================
+# RideShare - Enterprise Git Ignore
+# =========================================================
+
+
+# =========================================================
+# .NET / ASP.NET Core
+# =========================================================
+
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+out/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+
+# =========================================================
+# Angular / Node.js
+# =========================================================
+
+**/node_modules/
+
+# Angular build output
+**/dist/
+**/out-tsc/
+
+# Angular cache
+**/.angular/cache/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+
+# =========================================================
+# Application secrets / configuration
+# =========================================================
+
+# Local secrets
+**/secrets.json
+**/secrets.*.json
+
+# ASP.NET Core local configuration
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.Production.json
+
+# User secrets
+**/secrets/
+
+
+# =========================================================
+# Database
+# =========================================================
+
+# SQL Server database files
+*.mdf
+*.ldf
+*.ndf
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+
+# =========================================================
+# OS generated files
+# =========================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+
+# =========================================================
+# Logs
+# =========================================================
+
+*.log
+logs/
+**/logs/
+
+
+# =========================================================
+# Temporary files
+# =========================================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+
+# =========================================================
+# Coverage
+# =========================================================
+
+coverage/
+.coverage/
+.nyc_output/
+
+
+# =========================================================
+# Package manager caches
+# =========================================================
+
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz

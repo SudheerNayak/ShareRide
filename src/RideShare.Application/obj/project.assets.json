@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj",
+      "projectUniqueName": "E:\\E drive data\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj",
       "projectName": "RideShare.Application",
-      "projectPath": "E:\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj",
+      "projectPath": "E:\\E drive data\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\RideShare\\src\\RideShare.Application\\obj\\",
+      "outputPath": "E:\\E drive data\\RideShare\\src\\RideShare.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

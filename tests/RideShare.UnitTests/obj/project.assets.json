@@ -920,11 +920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
+      "projectUniqueName": "E:\\E drive data\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
       "projectName": "RideShare.UnitTests",
-      "projectPath": "E:\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
+      "projectPath": "E:\\E drive data\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\RideShare\\tests\\RideShare.UnitTests\\obj\\",
+      "outputPath": "E:\\E drive data\\RideShare\\tests\\RideShare.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

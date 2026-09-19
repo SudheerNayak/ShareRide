@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using RideShare.Infrastructure.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Db connection string is not found");
+builder.Services.AddDbContext<RideShareDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dwZU+9fEloE=",
+  "dgSpecHash": "Po+Pqsvh9nk=",
   "success": true,
-  "projectFilePath": "E:\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
+  "projectFilePath": "E:\\E drive data\\RideShare\\tests\\RideShare.UnitTests\\RideShare.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
