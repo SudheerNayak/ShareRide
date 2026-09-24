@@ -63,7 +63,7 @@ public partial class RideShareDbContext : DbContext
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(sysutcdatetime())", "DF_Rides_CreatedAt");
             entity.Property(e => e.FromLocation).HasMaxLength(200);
             entity.Property(e => e.PricePerSeat).HasColumnType("decimal(18, 2)");
-            entity.Property(e => e.Status).HasDefaultValue(1, "DG_Rides_Status");
+            //entity.Property(e => e.Status).HasDefaultValue(1, "DG_Rides_Status");
             entity.Property(e => e.ToLocation).HasMaxLength(200);
 
             entity.HasOne(d => d.Driver).WithMany(p => p.Rides)

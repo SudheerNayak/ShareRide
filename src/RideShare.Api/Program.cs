@@ -1,5 +1,9 @@
+using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.EntityFrameworkCore;
 using RideShare.Infrastructure.Data;
+using RideShare.Application.Interfaces.Repository;
+using RideShare.Infrastructure.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +18,7 @@ builder.Services.AddDbContext<RideShareDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
-
+builder.Services.AddScoped<IRideRepository, RideRepository>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

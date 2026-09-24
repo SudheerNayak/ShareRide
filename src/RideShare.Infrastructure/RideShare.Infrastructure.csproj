@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\RideShare.Application\RideShare.Application.csproj" />
     <ProjectReference Include="..\RideShare.Domain\RideShare.Domain.csproj" />
   </ItemGroup>
 

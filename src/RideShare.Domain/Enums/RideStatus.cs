@@ -1,5 +1,6 @@
 ﻿using System;
 
+namespace RideShare.Domain.Enums;
 public class RideStatus
 {
 	public enum rideStatus

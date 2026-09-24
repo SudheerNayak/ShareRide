@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "RideShare.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/RideShare.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RideShare.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RideShare.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RideShare.Domain/RideShare.Domain.csproj",
+      "msbuildProject": "../RideShare.Domain/RideShare.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "RideShare.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\E drive data\\RideShare\\src\\RideShare.Domain\\RideShare.Domain.csproj": {
+              "projectPath": "E:\\E drive data\\RideShare\\src\\RideShare.Domain\\RideShare.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

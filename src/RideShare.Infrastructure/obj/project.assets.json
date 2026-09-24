@@ -724,6 +724,19 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "RideShare.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "RideShare.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RideShare.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RideShare.Application.dll": {}
+        }
+      },
       "RideShare.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1732,6 +1745,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "RideShare.Application/1.0.0": {
+      "type": "project",
+      "path": "../RideShare.Application/RideShare.Application.csproj",
+      "msbuildProject": "../RideShare.Application/RideShare.Application.csproj"
+    },
     "RideShare.Domain/1.0.0": {
       "type": "project",
       "path": "../RideShare.Domain/RideShare.Domain.csproj",
@@ -1741,6 +1759,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.12",
+      "RideShare.Application >= 1.0.0",
       "RideShare.Domain >= 1.0.0"
     ]
   },
@@ -1777,6 +1796,9 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "E:\\E drive data\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj": {
+              "projectPath": "E:\\E drive data\\RideShare\\src\\RideShare.Application\\RideShare.Application.csproj"
+            },
             "E:\\E drive data\\RideShare\\src\\RideShare.Domain\\RideShare.Domain.csproj": {
               "projectPath": "E:\\E drive data\\RideShare\\src\\RideShare.Domain\\RideShare.Domain.csproj"
             }

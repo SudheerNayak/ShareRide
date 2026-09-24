@@ -1,5 +1,7 @@
 ﻿using System;
 
+namespace RideShare.Domain.Enums;
+
 public class PaymentStatus
 {
 	public enum paymentStatus
