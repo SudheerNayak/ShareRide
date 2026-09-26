@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.EntityFrameworkCore;
-using RideShare.Infrastructure.Data;
 using RideShare.Application.Interfaces.Repository;
+using RideShare.Application.Interfaces.Services;
+using RideShare.Application.Services;
+using RideShare.Infrastructure.Data;
 using RideShare.Infrastructure.Repositories;
 
 
@@ -19,6 +21,8 @@ builder.Services.AddDbContext<RideShareDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 builder.Services.AddScoped<IRideRepository, RideRepository>();
+builder.Services.AddScoped<IRideService, RideService>();
+builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

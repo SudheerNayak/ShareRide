@@ -16,11 +16,15 @@ public class RideRepository : IRideRepository
         _context = context;
     }
 
-    public void Add(Ride ride)
+    public async Task<Ride> AddAsync(Ride ride, CancellationToken cancellationToken= default)
     {
         var rideEntity = RideMapper.ToDatabase(ride);
+        await _context.Rides.AddAsync(rideEntity, cancellationToken);
 
-        _context.Rides.Add(rideEntity);
+        await _context.SaveChangesAsync(cancellationToken);
+
+        return RideMapper.ToDomain(rideEntity);
+       
     }
     public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
     {
