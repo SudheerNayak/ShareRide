@@ -1,0 +1,93 @@
+<div class="ride-page">
+
+  <div class="ride-header">
+
+    <div>
+      <h1>Available Rides</h1>
+      <p>Find a ride that matches your journey.</p>
+    </div>
+
+    <button type="button">
+      Create Ride
+    </button>
+
+  </div>
+
+
+  @if (isLoading) {
+
+  <div class="loading">
+    Loading rides...
+  </div>
+
+  }
+
+
+  @if (errorMessage) {
+
+  <div class="error">
+    {{ errorMessage }}
+  </div>
+
+  }
+
+
+  @if (!isLoading && !errorMessage && rides.length === 0) {
+
+  <div class="empty">
+    No rides available.
+  </div>
+
+  }
+
+
+  @if (!isLoading && rides.length > 0) {
+
+  <div class="ride-list">
+
+    @for (ride of rides; track ride.id) {
+
+    <div class="ride-card">
+
+      <div class="route">
+
+        <strong>
+          {{ ride.source }}
+        </strong>
+
+        <span>→</span>
+
+        <strong>
+          {{ ride.destination }}
+        </strong>
+
+      </div>
+
+      <div>
+        Date:
+        {{ ride.rideDate  }}
+      </div>
+
+      <div>
+        Available Seats:
+        <!--{{ ride.availableSeats }}-->
+      </div>
+
+      <div>
+        <!--₹{{ ride.pricePerSeat }} / seat-->
+      </div>
+
+      <div>
+        Status:
+        {{ ride.status }}
+      </div>
+
+    </div>
+
+    }
+
+  </div>
+
+  }
+
+</div>

@@ -1103,6 +1103,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.12",
           "RideShare.Domain": "1.0.0"
         },
         "compile": {
